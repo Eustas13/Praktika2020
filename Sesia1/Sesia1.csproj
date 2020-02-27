@@ -107,6 +107,12 @@
     </Compile>
     <Compile Include="Склад_ткани.cs" />
     <Compile Include="Склад_фурнитуры.cs" />
+    <Compile Include="Список заказов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Список заказов.Designer.cs">
+      <DependentUpon>Список заказов.cs</DependentUpon>
+    </Compile>
     <Compile Include="Список изделий.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Регистрация.resx">
       <DependentUpon>Регистрация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Список заказов.resx">
+      <DependentUpon>Список заказов.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Список изделий.resx">
       <DependentUpon>Список изделий.cs</DependentUpon>
