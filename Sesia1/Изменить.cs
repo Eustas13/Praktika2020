@@ -12,7 +12,6 @@ namespace Sesia1
 {
     public partial class Изменить : Form
     {
-        //БЕЛОВ ЧОРТ
         public Model2 db { get; set; }
         public Факт_поступления_материала rg { get; set; }
         public Изменить()
