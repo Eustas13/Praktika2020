@@ -19,8 +19,7 @@ namespace Sesia1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1.FORMA.Show();
+            Application.Exit();
         }
 
         private void Менеджер_Load(object sender, EventArgs e)

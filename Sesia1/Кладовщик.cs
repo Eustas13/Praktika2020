@@ -24,8 +24,7 @@ namespace Sesia1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form1.FORMA.Show();
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)

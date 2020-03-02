@@ -37,6 +37,7 @@
             this.тканьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.складтканиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.складтканиBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             this.ширинаDataGridViewTextBoxColumn,
             this.тканьDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.складтканиBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(715, 312);
             this.dataGridView1.TabIndex = 0;
@@ -98,19 +99,31 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 357);
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(4, 399);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 39);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Назад";
+            this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(280, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 31);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Список тканей";
             // 
             // Ткани
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 410);
+            this.ClientSize = new System.Drawing.Size(745, 442);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -121,6 +134,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.складтканиBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,5 +148,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn длинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ширинаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn тканьDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }
