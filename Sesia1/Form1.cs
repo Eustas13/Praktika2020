@@ -87,5 +87,16 @@ namespace Sesia1
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Змейка_игра_ zm = new Змейка_игра_();
+            zm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //123
+        }
     }
 }
