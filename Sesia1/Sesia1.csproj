@@ -79,6 +79,18 @@
     <Compile Include="Заказчик.Designer.cs">
       <DependentUpon>Заказчик.cs</DependentUpon>
     </Compile>
+    <Compile Include="Змейка%28игра%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Змейка%28игра%29.Designer.cs">
+      <DependentUpon>Змейка%28игра%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Змейка.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Змейка.Designer.cs">
+      <DependentUpon>Змейка.cs</DependentUpon>
+    </Compile>
     <Compile Include="Изделия.cs" />
     <Compile Include="Изменить.cs">
       <SubType>Form</SubType>
@@ -159,6 +171,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Заказчик.resx">
       <DependentUpon>Заказчик.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Змейка%28игра%29.resx">
+      <DependentUpon>Змейка%28игра%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Змейка.resx">
+      <DependentUpon>Змейка.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Изменить.resx">
       <DependentUpon>Изменить.cs</DependentUpon>
