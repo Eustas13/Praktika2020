@@ -104,5 +104,11 @@ namespace Sesia1
             Змейка zm = new Змейка();
             zm.Show();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Змейка zm = new Змейка();
+            zm.Show();
+        }
     }
 }

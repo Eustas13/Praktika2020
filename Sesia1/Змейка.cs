@@ -28,7 +28,7 @@ namespace Sesia1
 
         Timer timer = new Timer();
         Random rand = new Random((int)DateTime.Now.Ticks & 0x0000FFFF);
-        int W = 30, H = 30, S = 10;
+        int W = 50, H = 50, S = 15;
         // собственно змея: список сегментов(нулевой индекс в списке - голова змеи)  
         List<coord> snake = new List<coord>();
         coord apple;
@@ -78,7 +78,7 @@ namespace Sesia1
             snake.Add(new coord(W / 2, H - 3));//Коордтинты
             snake.Add(new coord(W / 2, H - 2));//Коордтинты        
             snake.Add(new coord(W / 2, H - 1));//Коордтинты
-            apple = new coord(rand.Next(W), rand.Next(H));
+            apple = new coord(rand.Next(W-1), rand.Next(H-1));
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace Sesia1
             snake.Insert(0, c);
             if (snake[0].X == apple.X && snake[0].Y == apple.Y)
             {
-                apple = new coord(rand.Next(W), rand.Next(H));//Появление яблока в рандомых местах 
+                apple = new coord(rand.Next(W-1), rand.Next(H-1));//Появление яблока в рандомых местах 
                 apples++;//Счетчик
                 score += stage;
                 if (apples % 5 == 0)//Счетчик
